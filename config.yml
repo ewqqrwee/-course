@@ -1,0 +1,16 @@
+title: 常規課程
+description: 操作存儲庫相關錯誤
+template:
+  repo: '-template'
+  name: ''
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
